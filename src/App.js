@@ -1,4 +1,4 @@
-import EH from './components/EventHandling';
+import CR from './components/Conditionallrendering';
 
 function App() {
     return (
@@ -6,7 +6,8 @@ function App() {
             {/* <FC locale="bn-BD" /> */}
             {/* <CC locale="bn-BD" /> */}
             {/* <CCSLC locale="bn-BD" /> */}
-            <EH />
+            {/* <EH /> */}
+            <CR />
         </div>
     );
 }
