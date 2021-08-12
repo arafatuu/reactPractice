@@ -1,13 +1,9 @@
-import CR from './components/Conditionallrendering';
+import FormHandler from './components/Form';
 
 function App() {
     return (
         <div>
-            {/* <FC locale="bn-BD" /> */}
-            {/* <CC locale="bn-BD" /> */}
-            {/* <CCSLC locale="bn-BD" /> */}
-            {/* <EH /> */}
-            <CR />
+            <FormHandler />
         </div>
     );
 }
