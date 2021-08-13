@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from './Button';
+import Button from '../EventHandling/Button';
 
 class ConditionalRend extends React.Component {
     constructor(props) {

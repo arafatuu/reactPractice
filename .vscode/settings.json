@@ -1,6 +1,6 @@
 {
   // Theme
-  "workbench.colorTheme": "Dracula",
+  "workbench.colorTheme": "Andromeda Colorizer",
 
   // config related to code formatting
   "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -20,6 +20,7 @@
     "source.organizeImports": true
   },
   "eslint.alwaysShowStatus": true,
+  "editor.fontSize": 16,
   // emmet
   "emmet.triggerExpansionOnTab": true,
   "emmet.includeLanguages": {

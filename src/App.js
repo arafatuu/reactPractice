@@ -1,9 +1,9 @@
-import FormHandler from './components/Form';
+import Calculator from './components/Calculator';
 
 function App() {
     return (
         <div>
-            <FormHandler />
+            <Calculator />
         </div>
     );
 }
