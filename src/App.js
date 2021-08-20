@@ -1,10 +1,15 @@
-import Calculator from './components/Calculator';
+import Calculator from './components/ReactLifingStateUp/Calculator';
 
 function App() {
     return (
-        <div>
-            <Calculator />
-        </div>
+        <Calculator />
+        // <Emoji>
+        //     {({ addEmoji }) => (
+        //         <Bracket>
+        //             {({ addBracket }) => <Text addEmoji={addEmoji} addBracket={addBracket} />}
+        //         </Bracket>
+        //     )}
+        // </Emoji>
     );
 }
 

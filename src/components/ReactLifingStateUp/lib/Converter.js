@@ -1,12 +1,12 @@
-export function toCelcius(F) {
+export function toCelsius(F) {
     return ((F - 32) * 5) / 9;
 }
 
-export function toFahrenhite(C) {
+export function toFahrenheit(C) {
     return (C * 9) / 5 + 32;
 }
 
-export function Converter(temperature, convertTo) {
+export function tryConverter(temperature, convertTo) {
     const input = parseFloat(temperature);
     if (Number.isNaN(input)) return '';
 

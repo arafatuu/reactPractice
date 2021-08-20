@@ -1,13 +1,11 @@
-import React from 'react';
-
-const tempUnitName = {
-    c: 'Celcius',
-    f: 'Fahrenhite',
+const scaleName = {
+    c: 'Celsius',
+    f: 'Fahrenheit',
 };
-export default function TemperatureInput({ temperature, scale, onTemperatureChange }) {
+export default function TemperatureInput({ scale, temperature, onTemperatureChange }) {
     return (
         <fieldset>
-            <legend>Enter temperature in {tempUnitName[scale]}</legend>
+            <legends>Enter input in {scaleName[scale]}</legends>
             <input
                 type="text"
                 value={temperature}
