@@ -1,8 +1,9 @@
-import Calculator from './components/ReactLifingStateUp/Calculator';
+import Calculator from './components/MyPractice/LiftingstateUp/Calculator';
 
 function App() {
     return (
         <Calculator />
+
         // <Emoji>
         //     {({ addEmoji }) => (
         //         <Bracket>
