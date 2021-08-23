@@ -1,8 +1,10 @@
-import Calculator from './components/MyPractice/LiftingstateUp/Calculator';
+import OriginalComponent from './components/OriginalComponent';
 
 function App() {
     return (
-        <Calculator />
+        <div className="app">
+            <OriginalComponent />
+        </div>
 
         // <Emoji>
         //     {({ addEmoji }) => (
