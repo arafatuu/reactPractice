@@ -1,4 +1,4 @@
-class MyContext {
+class Context {
     MyContext(value) {
         this.value = value;
     }
@@ -11,8 +11,8 @@ class MyContext {
     Consumer = ({ children }) => children(this.value);
 }
 
-export default function CreateContext(value = null) {
-    const context = new MyContext(value);
+export default function createContext(value = null) {
+    const context = new Context(value);
     return {
         Provider: context.Provider,
         Consumer: context.Consumer,

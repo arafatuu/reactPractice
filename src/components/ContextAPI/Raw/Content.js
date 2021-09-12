@@ -1,8 +1,8 @@
+import ThemeContext from '../lib/ThemeContext';
 import Counter from './Counter';
 import HoverCounter from './HoverCounter';
-import ThemeContext from './MyContextLibrary/ThemeContext';
 
-export default function Section() {
+export default function Content() {
     return (
         <div>
             <h2>

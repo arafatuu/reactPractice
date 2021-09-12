@@ -1,32 +1,29 @@
 import React from 'react';
-import ClickCounter from './components/ContextAPI/MyDefineContext/ClickCounter';
-import Counter from './components/ContextAPI/MyDefineContext/Counter';
-import ThemeContext from './components/ContextAPI/MyDefineContext/MyContextLibrary/ThemeContext';
-import Section from './components/ContextAPI/MyDefineContext/Section';
+import ThemeContext from './components/ContextAPI/lib/ReactThemeContext';
+import ClickCounter from './components/ContextAPI/ReactWay/ClickCounter';
+import Counter from './components/ContextAPI/ReactWay/Counter';
+import Section from './components/ContextAPI/ReactWay/Section';
 
 export default class App extends React.Component {
     state = {
-        theme: 'dark',
-
+        // eslint-disable-next-line react/no-unused-state
+        theme: 'light',
+        // eslint-disable-next-line react/no-unused-state
         switchTheme: () => {
-            console.log('switch');
             this.setState(({ theme }) => {
-                console.log(theme);
-                if (theme === 'light')
+                if (theme === 'dark') {
                     return {
-                        theme: 'dark',
+                        theme: 'light',
                     };
-
+                }
                 return {
-                    theme: 'light',
+                    theme: 'dark',
                 };
             });
         },
     };
 
     render() {
-        const { theme, switchTheme } = this.state;
-        console.log(theme);
         return (
             <div className="app">
                 <Counter>
@@ -35,10 +32,21 @@ export default class App extends React.Component {
                     )}
                 </Counter>
 
-                <ThemeContext.Provider value={{ theme, switchTheme }}>
+                <ThemeContext.Provider value={this.state}>
                     <Section />
                 </ThemeContext.Provider>
             </div>
+
+            // Context API
+            //      <Counter>
+            //      {(count, incrementFun) => (
+            //          <ClickCounter count={count} incrementFun={incrementFun} />
+            //      )}
+            //  </Counter>
+
+            //  <ThemeContext.Provider value={{ theme, switchTheme }}>
+            //      <Section />
+            //  </ThemeContext.Provider>
 
             // <Counter>
             // {(count, incrementFun) => (
