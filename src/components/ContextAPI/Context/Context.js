@@ -17,5 +17,5 @@ export default function createContext(value = null) {
         Provider: context.Provider,
         Consumer: context.Consumer,
     };
-    // ok
+    // okk
 }

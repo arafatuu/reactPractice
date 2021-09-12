@@ -5,4 +5,4 @@ export default function ClickCounter({ count, incrementFun }) {
         </button>
     );
 }
-// ok
+// okk

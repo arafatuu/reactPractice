@@ -13,4 +13,4 @@ export default function HoverCounter({ count, incrementFun, theme, switchTheme }
             </button>{' '}
         </div>
     );
-} // ok
+} // okk
